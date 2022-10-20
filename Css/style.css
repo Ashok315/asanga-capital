@@ -281,8 +281,6 @@ footer .brand_text {
 
 
 footer .footnote small {
-  color: rgb(169, 169, 169);
-  color: rgba(128, 178, 195, 0.959);
   color: rgba(255, 255, 255, 0.582);
   font-size: 0.9rem;
 }
@@ -299,8 +297,6 @@ footer .footnote small {
   margin: 0;
   padding: 0.5rem 0;
   color: rgba(0, 0, 0, 0.817);
-  /* color: #aaa;
-  color: #1a3f8f; */
 }
 
 
