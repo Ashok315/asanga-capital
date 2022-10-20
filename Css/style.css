@@ -116,6 +116,10 @@ header .navbar-brand img {
   height: auto;
 }
 
+body p {
+  text-align: justify !important;
+}
+
 
 .carousel-inner .carousel-item img {
   height: 93vh;
@@ -373,6 +377,10 @@ footer .footnote small {
   .contact_us .contact_right {
     margin-left: auto !important;
     margin-top: 3rem;
+  }
+
+  footer p {
+    text-align: center !important;
   }
 
 }
