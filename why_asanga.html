@@ -11,141 +11,176 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="./Images/favicon3.png">
 
     <script
       src="https://kit.fontawesome.com/e5995951cc.js"
       crossorigin="anonymous"
     ></script>
 
-    <title>Bootstrap website</title>
+    <title>Asanga</title>
     <link rel="stylesheet" type="text/css" href="./Css/style.css" />
  <style>
     .inner_header{
-        background: url('./Images/hader_bg3.jpg') center no-repeat ;
+        background: url('./Images/why_asanga.jpg') center no-repeat ;
         background-size: cover;
-       filter: opacity(0.9);
-        height: 65vh;
+       filter: opacity(0.6);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       height: 45vh;
+       width: 100%;
+       margin-top: 4rem;
+       position: relative;
     }
-    .inner_header .title{
+    .title{
         color:#fff;
-        font-weight: 600!important;
-       position: absolute;
-       top:56%;
-       left:43%;
-
-
- 
-
-      
-      
-     
+        font-family: 'Lato', sans-serif;
+      opacity:0.9;
+      position:absolute;
+     text-align: center;
+      margin:auto;
+      margin-top:6rem;
+       
+    }
+    .bg_header{
+     background-color:rgb(45, 139, 45);
+     display:flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .list li{
+      margin-bottom:0.7rem;
     }
  </style>
 </head>
 
-  <body>
+<body>
+  <!-- preloader -->
+  <div id="preloader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
     <!-- header start -->
     <header>
-      <!-- navbar start -->
-      <nav class="navbar navbar-expand-md navbar-light  fixed-top">
+       <!-- navbar start -->
+       <nav class="navbar navbar-expand-md navbar-light  fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="./Images/BRAND.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
+          <!-- <div class="row"> -->
+             <!-- <div class="col-md-4">  -->
+               <!-- <a class="navbar-brand" href="index.html"><img src="./Images/logo/Asanga Logo-01.png" alt="logo"/></a> -->
+               <a class="navbar-brand" href="index.html"><img src="./Images/logo/Asanga Logo-01.png" alt="logo"/></a>
+               
+             <!-- </div> -->
+             
+               <button 
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  data-hover="dropdown"
-                >
-                  About us
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="overview.html">Overview</a></li>
-                  <li><a class="dropdown-item" href="why_asanga.html">Why Asanga?</a></li>
-                  <li>
-                    <a class="dropdown-item" href="vision.html">Our Vision & Mission</a>
-                  </li>
-                  <li><a class="dropdown-item" href="about.html">About DIFC</a></li>
-                </ul>
-              </li>
-           
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  data-hover="dropdown"
-                >
-                  Our Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Investment Advisory</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Integrated Wealth Planing</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Credit & Corporate Advisory</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Risk Management & Governance
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="contact_us.html">Contact us</a>
-              </li>
-            </ul>
+             <!-- <div class="col-md-8"> -->
+             
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-hover="dropdown"
+                  >
+                    About us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./overview.html">Overview</a></li>
+                    <li><a class="dropdown-item" href="./why_asanga.html">Why Asanga?</a></li>
+                    <li>
+                      <a class="dropdown-item" href="./vision.html">Our Vision & Mission</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./about.html">About DIFC</a></li>
+                  </ul>
+                </li>
+             
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-hover="dropdown"
+                  >
+                    Our Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./advisory.html">Investment Advisory</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./wealth_planing.html"
+                        >Integrated Wealth Planing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./credit-corporate.html"
+                        >Credit & Corporate Advisory</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./risk_management.html"
+                        >Risk Management & Governance
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="contact_us.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+
+         
+          
+        <!-- </div> -->
+     
       </nav>
       <!-- navbar end -->
 
       
-<div class="inner_header"><h1 class="title">WHY ASANGA?</h1></div>
+      <div class="bg_header" >
+        <div class="inner_header"></div>
+        <h1 class="title">WHY ASANGA?</h1>
+      </div>
       
 
  
     </header>
     <!-- header end -->
 
-    <!--overview start -->
-    <section class="overview">
-      <div class="container mt-5">
-        <div class="row">
+    <!--why_asanga start -->
+    <section class="why_asanga">
+      <div class="container mt-5 px-0">
+        <div class="row gx-0">
        
        
           <div class="col-lg-10 col-md-10 col-sm-10 col-10 m-auto">
@@ -153,27 +188,23 @@
 
             <h3>Why Asanga?</h3>
             <p class="text-left">
-                Our clients have a taste for the superlative. 
-After all, they are successful individuals managing business interests across the countries. 
-Their business realities are complex- spanning multiple jurisdictions. 
-Their investment or financing needs are evolved- they look for beyond the regular . 
-Their challenges are unique - as themselves. Beyond money and business too, their commitments are intricate- whether related to their success planning or  philanthropy. 
-Their banking relations are multiple - as diverse as their needs. 
+              Our customers have an appreciation for excellence. They are, after all, accomplished people managing business interests globally. Their business realities are multijurisdictional and complex. Their investing or funding demands are sophisticated; they seek alternatives to the conventional. Their issues are as unique as they are. In addition to money and business, their obligations are intricate, whether it involves their success strategy or philanthropy. Their financial relationships are multiple- as diverse as their requirements.
     </p>
-<p>If you relate with any of above, you are the kind of client Asanga specialises in serving.
+<p>If you fit any of the above descriptions, you are the kind of customer Asanga specializes in assisting.
+
 </p>
  
-<p>Understanding rich and complex client profiles takes expertise and experience. Asanga helps its clients across diverse services including global investments, financing, corporate advisory, estate planning, risk management and much more through its integrated asset management and specialist advisory services.
+<p>
+  Understanding intricate customer profiles requires skill and experience. Asanga helps its clients across diverse services including global investments, financing, corporate advisory, estate planning, risk management and much more through its integrated asset management and specialist advisory services.
 </p>
-<ul style="list-style-type:decimal">
-  <li>Independent and unbiased- Using open architecture to offer unbiased advice keeping client’s best interest in mind
+<ul style="list-style-type:decimal" class="list">
+  <li><strong>Independent and unbiased-</strong> Using open architecture to provide unbiased advice while preserving the client's best interests.
   </li>
-  <li>Best in class solutions- with a global perspective through some of the top global private banks and service providers
+  <li><strong>Best-in-class solutions-</strong> with a global perspective provided by some of the world's leading private banks and service providers.
   </li>
-  <li>Transparent Fees- aligned with our client’s objectives
+  <li><strong>Transparent Fees-</strong> aligned with our client’s objectives.
   </li>
-  <li>Discipline- long-term wealth creation with capital preservation approach at the core, followed basis client’s profile, policy statement, objectives and constraints
-
+  <li><strong>Discipline-</strong> long-term wealth building with capital preservation approach at the core, based on client’s profile, policy statement, objectives and constraints.
   </li>
 </ul>
 
@@ -185,45 +216,51 @@ Their banking relations are multiple - as diverse as their needs.
         </div>
       </div>
     </section>
-    <!-- about end  -->
+    <!-- why_asanga end  -->
 
   
 
     <!-- start footer -->
     <footer class=" align-content-center text-white">
-        <div class="row container  justify-content-center m-auto ">
-          <div class="col-md-6 col-sm-6 col-10 ">
-           
-            <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Our Services</li>
-              <li>Disclaimer</li>
-              <li>Privacy Policy</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6 col-10 ">
-            <h4>CONTACT US</h4>
-            <h5>Email</h5>
-            <p>test@gmail.com</p>
-            <h5>Phone</h2>
-            <p>123456789</p>
-          </div>
-        
+      <div class="container">
+      <div class="row justify-content-center m-auto gx-3 px-0">
+      
+        <div class="col-md-5 col-sm-8  contact_text">
+          <h6 class="mb-3"><strong>Contact Us</strong></h6>
+          <p class="mb-0"><strong>Email</strong></p>
+          <p class="mb-2">support@asanga-capital.com</p>
+          <p class="mb-0 mt-0"><strong>Phone</strong></p>
+          <p class="mb-0">(+971) 4 375 1916
+          </p>
         </div>
-        <!-- <div class="icons text-center mt-5">
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-instagram-square"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div> -->
-      </footer>
-      <section>
-        <div class="copyright  text-center ">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="col-md-4 col-sm-8  footer-navigation ">
+          <h6>Company</h6>
+          <ul>    
+            <li><a href="./index.html"> Home</a></li>
+            <li><a href="./about.html"> About Us</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li><a href="./disclaimer.html"> Disclaimer</a></li>      
+            <li class="mb-1"><a href="./contact_us.html">Contact Us</a></li>
+          </ul>
+        </div> 
+        <div class="col-md-3 col-sm-8 footer_right">
+          <a class="navbar-brand" href="index.html"><img src="./Images/logo/Asanga Logo-03.png" alt="logo"/></a>
+          <p class="brand_text">Regulated by the DFSA</p>
+          <div class="col-md-10 col-sm-12 offset-2 icons text-right mt-1 ">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+       
         </div>
-      </section>
+            <p class="footnote text-center mt-3 mb-0"><small >Copyright © 2022 Asanga Capital Limited.</small>
+            </p>
+      </div>
+    </div>
+    </footer>
+      
+     
 
     <!-- end footer -->
 
@@ -232,5 +269,7 @@ Their banking relations are multiple - as diverse as their needs.
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Js/index.js"></script>
   </body>
 </html>
