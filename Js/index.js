@@ -1,14 +1,10 @@
-// document.ready(function(){
- 
-//    function preLoader(){
-//     var preloader=$('#preloader');
-//     preloader.css('display','none');
-    
-//     }
-   
-// })
+
 
 
 $(window).on('load', function () {
     $("#preloader").css('display','none');
     });
+
+//  $('.carousel').carousel({
+//         interval: 1000
+//       });
