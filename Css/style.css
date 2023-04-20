@@ -81,25 +81,24 @@ body h3 {
   z-index: 100;
 }
 
-header .navbar {
+.navbar {
   z-index: 50;
   padding: 0.2rem;
   /* margin: 0.2rem; */
 }
 
-
-header .navbar-light {
+.navbar-light {
   background-color: #dff3f8;
   background-color: #ddebf1fe;
   background-color: #e4f0f6fe;
 }
 
-header .navbar-brand {
+.navbar-brand {
   max-width: 200px;
   height: auto;
 }
 
-header .navbar-brand img {
+.navbar-brand img {
   max-width: 200px;
   height: auto;
 }
